@@ -5,7 +5,7 @@ Sistema de facturacion de supermercado.
 
 
 ## Integrantes del equipo:
-- Luca Peralta
+- Luka Peralta
 - Agustin Romanchuk
 - Lucas Roldan
 
