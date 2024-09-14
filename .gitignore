@@ -1,4 +1,8 @@
-
+*.*
+!*.py
+!*.json
+!.gitignore
+!README.md
 
 .DS_Store
 Thumbs.db
