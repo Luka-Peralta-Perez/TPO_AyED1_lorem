@@ -1,6 +1,6 @@
-### Trabajo Final Grupal.
+## Trabajo Final Grupal.
 
-## El proyecto se trata de un:
+### El proyecto se trata de un:
 Sistema de facturacion de supermercado.
 
 
