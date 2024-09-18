@@ -1,0 +1,51 @@
+id_productos;descripcion;precio;categoria
+1;lays;3500;alimento
+2;shampo;1200;higiene
+3;jabon;500;higiene
+4;pepitos;900;alimento
+5;escoba;1900;almacen
+6;detergente;2500;limpieza
+7;leche;1200;alimento
+8;queso;3500;alimento
+9;pasta dental;800;higiene
+10;arroz;1000;alimento
+11;cereal;2200;alimento
+12;papel higiénico;1500;higiene
+13;agua mineral;700;bebida
+14;coca-cola;1800;bebida
+15;salsa de tomate;900;alimento
+16;esponja;600;limpieza
+17;chocolate;3000;alimento
+18;mantequilla;1200;alimento
+19;zumo de naranja;1800;bebida
+20;harina;1100;alimento
+21;sal;500;alimento
+22;azúcar;900;alimento
+23;aceite de oliva;3500;alimento
+24;pan de molde;1200;alimento
+25;jamón;2500;alimento
+26;pimienta;400;alimento
+27;servilletas;700;almacen
+28;cloro;1500;limpieza
+29;desinfectante;1700;limpieza
+30;vinagre;800;alimento
+31;gaseosa;2000;bebida
+32;te;500;bebida
+33;cerveza;2500;bebida
+34;frijoles;1200;alimento
+35;lentejas;1100;alimento
+36;helado;3000;alimento
+37;galletas;900;alimento
+38;yogurt;1800;alimento
+39;fideos;1300;alimento
+40;café;2500;bebida
+41;carne molida;4500;alimento
+42;pollo;4000;alimento
+43;pescado;5000;alimento
+44;brocoli;1500;alimento
+45;zanahorias;1000;alimento
+46;papa;900;alimento
+47;champiñones;2000;alimento
+48;tomates;1100;alimento
+49;pepinos;1000;alimento
+50;lechuga;900;alimento
