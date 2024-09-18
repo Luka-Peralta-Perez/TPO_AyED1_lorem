@@ -1,0 +1,352 @@
+[
+  {
+    "id_productos": 1,
+    "descripcion": "lays",
+    "precio": 3500,
+    "categoria": "alimento",
+    "stock": 50
+  },
+  {
+    "id_productos": 2,
+    "descripcion": "shampo",
+    "precio": 1200,
+    "categoria": "higiene",
+    "stock": 30
+  },
+  {
+    "id_productos": 3,
+    "descripcion": "jabon",
+    "precio": 500,
+    "categoria": "higiene",
+    "stock": 20
+  },
+  {
+    "id_productos": 4,
+    "descripcion": "pepitos",
+    "precio": 900,
+    "categoria": "alimento",
+    "stock": 40
+  },
+  {
+    "id_productos": 5,
+    "descripcion": "escoba",
+    "precio": 1900,
+    "categoria": "almacen",
+    "stock": 10
+  },
+  {
+    "id_productos": 6,
+    "descripcion": "detergente",
+    "precio": 2500,
+    "categoria": "limpieza",
+    "stock": 25
+  },
+  {
+    "id_productos": 7,
+    "descripcion": "leche",
+    "precio": 1200,
+    "categoria": "alimento",
+    "stock": 35
+  },
+  {
+    "id_productos": 8,
+    "descripcion": "queso",
+    "precio": 3500,
+    "categoria": "alimento",
+    "stock": 45
+  },
+  {
+    "id_productos": 9,
+    "descripcion": "pasta dental",
+    "precio": 800,
+    "categoria": "higiene",
+    "stock": 15
+  },
+  {
+    "id_productos": 10,
+    "descripcion": "arroz",
+    "precio": 1000,
+    "categoria": "alimento",
+    "stock": 30
+  },
+  {
+    "id_productos": 11,
+    "descripcion": "cereal",
+    "precio": 2200,
+    "categoria": "alimento",
+    "stock": 20
+  },
+  {
+    "id_productos": 12,
+    "descripcion": "papel higiénico",
+    "precio": 1500,
+    "categoria": "higiene",
+    "stock": 25
+  },
+  {
+    "id_productos": 13,
+    "descripcion": "agua mineral",
+    "precio": 700,
+    "categoria": "bebida",
+    "stock": 40
+  },
+  {
+    "id_productos": 14,
+    "descripcion": "coca-cola",
+    "precio": 1800,
+    "categoria": "bebida",
+    "stock": 35
+  },
+  {
+    "id_productos": 15,
+    "descripcion": "salsa de tomate",
+    "precio": 900,
+    "categoria": "alimento",
+    "stock": 20
+  },
+  {
+    "id_productos": 16,
+    "descripcion": "esponja",
+    "precio": 600,
+    "categoria": "limpieza",
+    "stock": 15
+  },
+  {
+    "id_productos": 17,
+    "descripcion": "chocolate",
+    "precio": 3000,
+    "categoria": "alimento",
+    "stock": 30
+  },
+  {
+    "id_productos": 18,
+    "descripcion": "mantequilla",
+    "precio": 1200,
+    "categoria": "alimento",
+    "stock": 25
+  },
+  {
+    "id_productos": 19,
+    "descripcion": "zumo de naranja",
+    "precio": 1800,
+    "categoria": "bebida",
+    "stock": 20
+  },
+  {
+    "id_productos": 20,
+    "descripcion": "harina",
+    "precio": 1100,
+    "categoria": "alimento",
+    "stock": 35
+  },
+  {
+    "id_productos": 21,
+    "descripcion": "sal",
+    "precio": 500,
+    "categoria": "alimento",
+    "stock": 40
+  },
+  {
+    "id_productos": 22,
+    "descripcion": "azúcar",
+    "precio": 900,
+    "categoria": "alimento",
+    "stock": 30
+  },
+  {
+    "id_productos": 23,
+    "descripcion": "aceite de oliva",
+    "precio": 3500,
+    "categoria": "alimento",
+    "stock": 25
+  },
+  {
+    "id_productos": 24,
+    "descripcion": "pan de molde",
+    "precio": 1200,
+    "categoria": "alimento",
+    "stock": 20
+  },
+  {
+    "id_productos": 25,
+    "descripcion": "jamón",
+    "precio": 2500,
+    "categoria": "alimento",
+    "stock": 30
+  },
+  {
+    "id_productos": 26,
+    "descripcion": "pimienta",
+    "precio": 400,
+    "categoria": "alimento",
+    "stock": 15
+  },
+  {
+    "id_productos": 27,
+    "descripcion": "servilletas",
+    "precio": 700,
+    "categoria": "almacen",
+    "stock": 25
+  },
+  {
+    "id_productos": 28,
+    "descripcion": "cloro",
+    "precio": 1500,
+    "categoria": "limpieza",
+    "stock": 20
+  },
+  {
+    "id_productos": 29,
+    "descripcion": "desinfectante",
+    "precio": 1700,
+    "categoria": "limpieza",
+    "stock": 30
+  },
+  {
+    "id_productos": 30,
+    "descripcion": "vinagre",
+    "precio": 800,
+    "categoria": "alimento",
+    "stock": 25
+  },
+  {
+    "id_productos": 31,
+    "descripcion": "gaseosa",
+    "precio": 2000,
+    "categoria": "bebida",
+    "stock": 35
+  },
+  {
+    "id_productos": 32,
+    "descripcion": "te",
+    "precio": 500,
+    "categoria": "bebida",
+    "stock": 40
+  },
+  {
+    "id_productos": 33,
+    "descripcion": "cerveza",
+    "precio": 2500,
+    "categoria": "bebida",
+    "stock": 30
+  },
+  {
+    "id_productos": 34,
+    "descripcion": "frijoles",
+    "precio": 1200,
+    "categoria": "alimento",
+    "stock": 20
+  },
+  {
+    "id_productos": 35,
+    "descripcion": "lentejas",
+    "precio": 1100,
+    "categoria": "alimento",
+    "stock": 25
+  },
+  {
+    "id_productos": 36,
+    "descripcion": "helado",
+    "precio": 3000,
+    "categoria": "alimento",
+    "stock": 30
+  },
+  {
+    "id_productos": 37,
+    "descripcion": "galletas",
+    "precio": 900,
+    "categoria": "alimento",
+    "stock": 20
+  },
+  {
+    "id_productos": 38,
+    "descripcion": "yogurt",
+    "precio": 1800,
+    "categoria": "alimento",
+    "stock": 25
+  },
+  {
+    "id_productos": 39,
+    "descripcion": "fideos",
+    "precio": 1300,
+    "categoria": "alimento",
+    "stock": 20
+  },
+  {
+    "id_productos": 40,
+    "descripcion": "café",
+    "precio": 2500,
+    "categoria": "bebida",
+    "stock": 30
+  },
+  {
+    "id_productos": 41,
+    "descripcion": "carne molida",
+    "precio": 4500,
+    "categoria": "alimento",
+    "stock": 25
+  },
+  {
+    "id_productos": 42,
+    "descripcion": "pollo",
+    "precio": 4000,
+    "categoria": "alimento",
+    "stock": 20
+  },
+  {
+    "id_productos": 43,
+    "descripcion": "pescado",
+    "precio": 5000,
+    "categoria": "alimento",
+    "stock": 25
+  },
+  {
+    "id_productos": 44,
+    "descripcion": "brocoli",
+    "precio": 1500,
+    "categoria": "alimento",
+    "stock": 20
+  },
+  {
+    "id_productos": 45,
+    "descripcion": "zanahorias",
+    "precio": 1000,
+    "categoria": "alimento",
+    "stock": 25
+  },
+  {
+    "id_productos": 46,
+    "descripcion": "papa",
+    "precio": 900,
+    "categoria": "alimento",
+    "stock": 20
+  },
+  {
+    "id_productos": 47,
+    "descripcion": "champiñones",
+    "precio": 2000,
+    "categoria": "alimento",
+    "stock": 25
+  },
+  {
+    "id_productos": 48,
+    "descripcion": "tomates",
+    "precio": 1100,
+    "categoria": "alimento",
+    "stock": 20
+  },
+  {
+    "id_productos": 49,
+    "descripcion": "pepinos",
+    "precio": 1000,
+    "categoria": "alimento",
+    "stock": 25
+  },
+  {
+    "id_productos": 50,
+    "descripcion": "lechuga",
+    "precio": 900,
+    "categoria": "alimento",
+    "stock": 20
+  }
+]
