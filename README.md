@@ -58,4 +58,5 @@ Sistema de facturacion de supermercado.
         import random
         import datetime
 
-
+### Ejemplo del programa
+ https://www.figma.com/proto/lFUmgyWA0ZQ644kcNbBlmF/Sist-Market.?page-id=0%3A1&node-id=21-23&node-type=frame&viewport=248%2C455%2C0.11&t=Sa7GLoyfdbeLBex0-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=7%3A18
