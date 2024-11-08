@@ -1,5 +1,7 @@
 from os import system, name
 from tabulate import tabulate
+import datetime
+import json
 
 #identifica el sistema operativo
 def limpiarpantalla():
