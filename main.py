@@ -1,9 +1,23 @@
 from os import system, name
 from tabulate import tabulate
 import json
+from typing import Dict, Any
 
-    
-def cargar_compra(stock):
+# Limpiar pantalla
+def limpiar_pantalla() -> None:
+    """
+    Pre: No hay condiciones previas.
+    Post: Limpia la pantalla del terminal.
+    """
+    system("cls" if name == "nt" else "clear")
+
+
+# Función para cargar compra
+def cargar_compra(stock: Dict[int, Dict[str, Any]]) -> None:
+    """
+    Pre: `stock` debe ser un diccionario con los productos disponibles para la compra.
+    Post: Muestra un menú para realizar compras, incluyendo la búsqueda de productos, cantidad a comprar y total a pagar.
+    """
     while True:
         limpiar_pantalla()
         opciones = [
@@ -14,6 +28,7 @@ def cargar_compra(stock):
             {"id": "5", "descripcion": "Volver al menú principal", "accion": main}
         ]
 
+        # Mostrar opciones con tabulate
         print(tabulate(
             [[opcion["id"], opcion["descripcion"]] for opcion in opciones],
             headers=["Opción", "Descripción"],
@@ -21,6 +36,7 @@ def cargar_compra(stock):
             colalign=("center", "left"),
         ))
 
+        # Selección de opción
         usuario = input("Ingrese una opción: ").strip()
         for opcion in opciones:
             if usuario == opcion["id"]:
@@ -31,9 +47,14 @@ def cargar_compra(stock):
                 break
         else:
             print("Opción inválida, intente de nuevo.")
-        
 
-def buscar_producto(stock):
+
+# Función para buscar un producto en stock
+def buscar_producto(stock: Dict[int, Dict[str, Any]]) -> None:
+    """
+    Pre: `stock` debe ser un diccionario con productos.
+    Post: Muestra los detalles de un producto si se encuentra en el stock.
+    """
     limpiar_pantalla()
     try:
         producto_id = int(input("Ingrese el ID del producto a buscar: ").strip())
@@ -52,19 +73,30 @@ def buscar_producto(stock):
     input("\nPresione Enter para continuar...")
 
 
-def cantidad_comprar(stock):
+# Función para manejar la cantidad de compra (pendiente de implementar)
+def cantidad_comprar(stock: Dict[int, Dict[str, Any]]) -> None:
+    """
+    Pre: `stock` debe ser un diccionario con los productos disponibles para la compra.
+    Post: Esta función está pendiente de implementación.
+    """
     pass
 
 
-def ver_compras():
+# Función para mostrar compras (pendiente de implementar)
+def ver_compras() -> None:
+    """
+    Pre: No hay condiciones previas.
+    Post: Muestra un menú para gestionar las compras.
+    """
     while True:
         limpiar_pantalla()
         opciones = [
             {"id": "1", "descripcion": "Filtrar Compra por fecha", "accion": buscar_producto},
-            {"id": "2", "descripcion": "Mostrar Ultima compra realizada","accion": cantidad_comprar},
-            {"id": "3", "descripcion": "Volver al Menu Principal", "accion": main}, 
+            {"id": "2", "descripcion": "Mostrar Ultima compra realizada", "accion": cantidad_comprar},
+            {"id": "3", "descripcion": "Volver al Menu Principal", "accion": main},
         ]
 
+        # Mostrar opciones con tabulate
         print(tabulate(
             [[opcion["id"], opcion["descripcion"]] for opcion in opciones],
             headers=["Opción", "Descripción"],
@@ -72,6 +104,7 @@ def ver_compras():
             colalign=("center", "left"),
         ))
 
+        # Selección de opción
         usuario = input("Ingrese una opción: ").strip()
         for opcion in opciones:
             if usuario == opcion["id"]:
@@ -83,19 +116,40 @@ def ver_compras():
         else:
             print("Opción inválida, intente de nuevo.")
 
-def ver_descuento():
-    # Implementar la función ver_descuento
+
+# Funciones no implementadas
+def ver_descuento() -> None:
+    """
+    Pre: No hay condiciones previas.
+    Post: Esta función está pendiente de implementación.
+    """
     pass
 
-def generar_ticket():
-    # Implementar la función generar_ticket
+
+def generar_ticket() -> None:
+    """
+    Pre: No hay condiciones previas.
+    Post: Esta función está pendiente de implementación.
+    """
     pass
 
-def agregar_productos():
-    # Implementar la función agregar_productos
+
+def agregar_productos() -> None:
+    """
+    Pre: No hay condiciones previas.
+    Post: Esta función está pendiente de implementación.
+    """
     pass
 
-def cargar_productos_desde_csv(archivo_csv):
+def cierre_caja():
+    pass
+
+# Cargar productos desde CSV
+def cargar_productos_desde_csv(archivo_csv: str) -> bool:
+    """
+    Pre: El archivo CSV debe existir en la ruta especificada y estar bien formado.
+    Post: Devuelve True si el archivo se carga correctamente, False en caso contrario.
+    """
     global productos
     try:
         with open(archivo_csv, "rt", encoding="utf-8-sig") as archivo:
@@ -108,11 +162,17 @@ def cargar_productos_desde_csv(archivo_csv):
         print(f"Ocurrió un error al cargar el archivo '{archivo_csv}': {e}")
         return False
 
-def cargar_stock_desde_json(archivo_json):
+
+# Cargar stock desde JSON
+def cargar_stock_desde_json(archivo_json: str) -> Dict[int, Dict[str, Any]]:
+    """
+    Pre: El archivo JSON debe existir y tener un formato válido.
+    Post: Devuelve un diccionario de stock donde las claves son los IDs de los productos.
+    """
     try:
         with open(archivo_json) as f:
             lista_stock = json.load(f)
-            return {producto["id_productos"]: producto for producto in lista_stock}   # Devuelve el contenido del archivo si se cargó correctamente
+            return {producto["id_productos"]: producto for producto in lista_stock}
     except FileNotFoundError:
         print(f"Error: No se encontró el archivo '{archivo_json}'. Verifique la ruta y vuelva a intentarlo.")
         return {}
@@ -120,24 +180,29 @@ def cargar_stock_desde_json(archivo_json):
         print(f"Ocurrió un error al cargar el archivo '{archivo_json}': {e}")
         return {}
 
-def limpiar_pantalla():
-    system("cls" if name == "nt" else "clear")
 
-def salir():
+# Función para salir
+def salir() -> None:
+    """
+    Pre: No hay condiciones previas.
+    Post: Sale del programa.
+    """
     print("Saliendo...")
     exit()
 
+
+# Mostrar opciones principales
 def mostrar_opciones():
     limpiar_pantalla()
     opciones = [
         {"id": "1", "descripcion": "Cargar Compra", "accion": cargar_compra},
         {"id": "2", "descripcion": "Ver compras", "accion": ver_compras},
         {"id": "3", "descripcion": "Ver descuento del Día", "accion": ver_descuento},
-        {"id": "4", "descripcion": "Generar ticket de compra", "accion": generar_ticket},
-        {"id": "5", "descripcion": "Agregar productos", "accion": agregar_productos},
-        {"id": "6", "descripcion": "Salir", "accion": salir}
+        {"id": "4", "descripcion": "Realizar Cierre de caja", "accion": cierre_caja},
+        {"id": "5", "descripcion": "Salir", "accion": salir}    
     ]
 
+    # Mostrar opciones con tabulate
     print(
         tabulate(
             [[opcion["id"], opcion["descripcion"]] for opcion in opciones],
@@ -146,12 +211,16 @@ def mostrar_opciones():
             colalign=("center", "left"),
         )
     )
-    
+
     return opciones
 
-# Función principal del programa
-def main():
-    # Cargar los productos desde el archivo CSV y el stock desde JSON
+
+# Función principal
+def main() -> None:
+    """
+    Pre: Los archivos CSV y JSON deben estar disponibles y ser válidos.
+    Post: Ejecuta el programa, cargando los productos y el stock, y mostrando el menú principal.
+    """
     archivo_csv = "archivos/csv/productos_50.csv"
     archivo_json = "archivos/json/json_productos_stock.json"
 
@@ -161,7 +230,7 @@ def main():
         return
 
     stock = cargar_stock_desde_json(archivo_json)
-    if stock is None:
+    if not stock:
         print("Error crítico: No se pudo cargar el stock del archivo JSON. El programa no se ejecutará.")
         return
 
@@ -179,5 +248,7 @@ def main():
         else:
             print("Opción inválida, intente de nuevo.")
 
+
+# Iniciar la ejecución del programa
 if __name__ == "__main__":
     main()
